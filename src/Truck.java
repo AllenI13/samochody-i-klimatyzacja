@@ -7,7 +7,6 @@ public class Truck extends Car {
     }
 
 
-
     public void AirConditionerOn(Truck truck) {
         if (!truck.isAirConditionerOn()) {
             truck.setAirConditionerOn(true);
@@ -24,10 +23,11 @@ public class Truck extends Car {
 
     public void equipment(Truck truck, int weight) {
         truck.setEquipmentWeight(weight);
-        truck.setFuelConsumption(truck.getFuelConsumption()+(0.005*weight));
+        truck.setFuelConsumption(truck.getFuelConsumption() + (0.005 * weight));
     }
-    public double distance(Truck truck){
-        return (truck.getCapacity()/truck.getFuelConsumption())*100;
+
+    public double distance(Truck truck) {
+        return (truck.getCapacity() / truck.getFuelConsumption()) * 100;
     }
 
     public int getEquipmentWeight() {
@@ -37,11 +37,12 @@ public class Truck extends Car {
     public void setEquipmentWeight(int equipmentWeight) {
         this.equipmentWeight = equipmentWeight;
     }
-    public void printInfo(Car array[]){
-        for(int i=0; i<=array.length-1; i++){
+
+    public void printInfo(Car array[]) {
+        for (int i = 0; i <= array.length - 1; i++) {
             System.out.println("NAME: " + array[i].getName() + " FUEL CONSUMPTION " + array[i].getFuelConsumption() +
                     " CAPACITY " + array[i].getCapacity() + " " +
-            "airConditionerOn=" + array[i].isAirConditionerOn() + " DISTANCE POSSIBLE :" + array[i].distance(array[i]));
+                    "airConditionerOn=" + array[i].isAirConditionerOn() + " DISTANCE POSSIBLE :" + array[i].distance(array[i]));
         }
     }
 

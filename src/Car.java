@@ -27,8 +27,9 @@ public class Car extends Vehicle {
     public void setAirConditionerOn(boolean airConditionerOn) {
         this.airConditionerOn = airConditionerOn;
     }
-    public double distance(Car car){
-        return (car.getCapacity()/car.getFuelConsumption())*100;
+
+    public double distance(Car car) {
+        return (car.getCapacity() / car.getFuelConsumption()) * 100;
     }
 
 

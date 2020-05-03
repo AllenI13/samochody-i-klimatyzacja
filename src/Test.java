@@ -5,10 +5,10 @@ public class Test {
         array[1] = new Car("Mercedes", 80, 10);
         array[2] = new Truck("Volvo", 150, 20);
         array[3] = new Truck("Volvo", 200, 22);
-        Truck truck = (Truck)array[2];
-        Truck truck1 = (Truck)array[3];
-        truck.equipment(truck,500);
-        truck1.equipment(truck1,5000);
+        Truck truck = (Truck) array[2];
+        Truck truck1 = (Truck) array[3];
+        truck.equipment(truck, 500);
+        truck1.equipment(truck1, 5000);
         truck.printInfo(array);
         array[0].AirConditionerOn(array[0]);
         array[1].AirConditionerOn(array[1]);
